@@ -1,0 +1,89 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: whitesmoke;
+    width: 100vw;
+    padding: 1rem 0;
+}
+
+.container {
+    display: flex;
+    width: 1200px;
+    margin: 0 auto;
+    padding: 0 0.8rem;
+    justify-content: space-between;
+    color: black;
+    flex-direction: column;
+}
+
+.heading {
+    margin: 0 auto;
+}
+
+.subcontainer {
+    margin: 5rem 0;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.box {
+    display: flex;
+    border: 1px solid black;
+    width: 200px;
+    height: 200px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+}
+
+.form {
+    margin: 40px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.8rem;
+}
+
+.form input {
+    width: 40%;
+    height: 2rem;
+}
+
+.form button {
+    width: 20%;
+    padding: 0.4rem;
+}
+
+.red {
+    font-weight: 400;
+    color: darkred;
+    border:3px solid darkred;
+    background-color: red;
+}
+
+.blue {
+    font-weight: 400;
+    color: darkblue;
+    border:3px solid darkblue;
+    background-color: blue;
+}
+
+.green {
+    font-weight: 400;
+    color: darkgreen;
+    border:3px solid darkgreen;
+    background-color: green;
+}
+
+.yellow {
+    font-weight: 400;
+    color: orange;
+    border:3px solid orange;
+    background-color: yellow;
+}
