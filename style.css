@@ -100,7 +100,7 @@ header {
     }
     
     .subcontainer {
-        margin: 1rem 0;
+        margin: 0.55rem 0;
         flex-flow: column wrap;
         gap: 1rem;
     }
