@@ -14,43 +14,19 @@ const blueBox = document.getElementById('box2');
 const greenBox = document.getElementById('box3');
 const yellowBox = document.getElementById('box4');
 
-let lever = false;
+// let lever = false;
 redBox.addEventListener('click', () => {
-    if (lever === false){
-        lever = true;
-        redBox.classList.add('red');
-    } else if (lever === true){
-        lever = false;
-        redBox.classList.remove('red');
-    }
+    redBox.classList.toggle('red');
 });
 
 blueBox.addEventListener('click', () => {
-    if (lever === false){
-        lever = true;
-        blueBox.classList.add('blue');
-    } else if (lever === true){
-        lever = false;
-        blueBox.classList.remove('blue');
-    }
+    blueBox.classList.toggle('blue');
 });
 
 greenBox.addEventListener('click', () => {
-    if (lever === false){
-        lever = true;
-        greenBox.classList.add('green');
-    } else if (lever === true){
-        lever = false;
-        greenBox.classList.remove('green');
-    }
+    greenBox.classList.toggle('green');
 });
 
 yellowBox.addEventListener('click', () => {
-    if (lever === false){
-        lever = true;
-        yellowBox.classList.add('yellow');
-    } else if (lever === true){
-        lever = false;
-        yellowBox.classList.remove('yellow');
-    }
+    yellowBox.classList.toggle('yellow');
 });
