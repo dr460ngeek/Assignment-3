@@ -12,7 +12,7 @@ header {
 
 .container {
     display: flex;
-    width: 1200px;
+    max-width: 1200px;
     margin: 0 auto;
     padding: 0 0.8rem;
     justify-content: space-between;
@@ -24,10 +24,15 @@ header {
     margin: 0 auto;
 }
 
+.heading h1 {
+    font-size: 2rem;
+}
+
 .subcontainer {
     margin: 5rem 0;
+    gap: 1rem;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: center;
 }
 
@@ -63,27 +68,48 @@ header {
 .red {
     font-weight: 400;
     color: darkred;
-    border:3px solid darkred;
+    border: 3px solid darkred;
     background-color: red;
 }
 
 .blue {
     font-weight: 400;
     color: darkblue;
-    border:3px solid darkblue;
+    border: 3px solid darkblue;
     background-color: blue;
 }
 
 .green {
     font-weight: 400;
     color: darkgreen;
-    border:3px solid darkgreen;
+    border: 3px solid darkgreen;
     background-color: green;
 }
 
 .yellow {
     font-weight: 400;
     color: orange;
-    border:3px solid orange;
+    border: 3px solid orange;
     background-color: yellow;
+}
+
+@media screen and (width <=600px) {
+    .box {
+        height: 100px;
+        width: 100px;
+    }
+    
+    .subcontainer {
+        margin: 1rem 0;
+        flex-flow: column wrap;
+        gap: 1rem;
+    }
+
+    .form {
+        flex-flow: column wrap;
+    }
+
+    .heading h1 {
+        font-size: 1.5rem;
+    }
 }
